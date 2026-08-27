@@ -1,8 +1,11 @@
-import http from "http"
-const server= http.createServer((req,res)=>{
-    console.log("welcome to node js");
+import http from "http";
+
+const server = http.createServer((req, res) => {
+  //   res.writeHead(500, {
+  //     "content-type": "text/html",
+  //   });
+
+  res.end("<h1>Welcome to Server</h1>");
 });
 
-server.listen(5000,()=>{
-    console.log("server is running");
-});
+server.listen(4444, () => console.log("Server is running"));
